@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M VALEZCO S - Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Efek Liquid Glass Custom */
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .liquid-glass-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        body {
+            background-color: #05050a;
+            color: #f3f4f6;
+            font-family: system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        /* Background Glow Orbs */
+        .glow-orb {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen pb-20">
+
+    <!-- Background Ambient Glows -->
+    <div class="glow-orb bg-purple-600 top-10 left-10"></div>
+    <div class="glow-orb bg-cyan-600 bottom-10 right-10"></div>
+
+    <!-- Container Utama -->
+    <main class="max-w-4xl mx-auto px-4 py-8 space-y-8">
+
+        <!-- Header / Hero Section -->
+        <section class="liquid-glass-card rounded-3xl p-8 text-center relative overflow-hidden">
+            <div class="absolute top-4 left-4 text-xs tracking-widest text-cyan-400 font-semibold uppercase">Stay Hydrated !!</div>
+            <div class="mt-6">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+                    BANG VALZZ
+                </h1>
+                <p class="text-xl font-medium text-gray-300 mt-2">M VALEZCO S</p>
+                <p class="text-sm italic text-gray-400 mt-1">"Hanyalah insan biasa yang berusaha untuk menjadi luar biasa."</p>
+            </div>
+        </section>
+
+        <!-- Navigasi / Menu Liquid Buttons dengan Efek Menonjol Saat Ditekan -->
+        <nav class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <a href="#tentang" class="liquid-glass p-4 rounded-2xl text-center font-medium hover:bg-white/15 hover:-translate-y-1 active:scale-95 transition-all duration-200 border-l-4 border-cyan-400 shadow-md">Tentang Saya</a>
+            <a href="#pendidikan" class="liquid-glass p-4 rounded-2xl text-center font-medium hover:bg-white/15 hover:-translate-y-1 active:scale-95 transition-all duration-200 border-l-4 border-purple-400 shadow-md">Pendidikan</a>
+            <a href="#jam-terbang" class="liquid-glass p-4 rounded-2xl text-center font-medium hover:bg-white/15 hover:-translate-y-1 active:scale-95 transition-all duration-200 border-l-4 border-blue-400 shadow-md">Jam Terbang</a>
+            <a href="#exercise" class="liquid-glass p-4 rounded-2xl text-center font-medium hover:bg-white/15 hover:-translate-y-1 active:scale-95 transition-all duration-200 border-l-4 border-pink-400 shadow-md">Exercise Favorit</a>
+            <a href="#ulasan" class="liquid-glass p-4 rounded-2xl text-center font-medium hover:bg-white/15 hover:-translate-y-1 active:scale-95 transition-all duration-200 border-l-4 border-green-400 shadow-md">Ulasan Klien</a>
+            <a href="#kontak" class="liquid-glass p-4 rounded-2xl text-center font-medium hover:bg-white/15 hover:-translate-y-1 active:scale-95 transition-all duration-200 border-l-4 border-yellow-400 shadow-md">Kontak</a>
+        </nav>
+
+        <!-- Tentang Saya -->
+        <section id="tentang" class="liquid-glass-card rounded-3xl p-6 md:p-8">
+            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                
+                <!-- Foto di Sebelah Kiri -->
+                <div class="w-40 h-56 md:w-48 md:h-64 flex-shrink-0 rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-lg shadow-cyan-500/20 bg-gradient-to-b from-slate-900 via-cyan-950 to-slate-950 flex justify-center items-end">
+                    <img src="dvnjjnvrs.PNG" alt="Foto M Valezco S" class="w-full h-full object-contain object-bottom scale-110">
+                </div>
+
+                <!-- Teks di Sebelah Kanan -->
+                <div class="space-y-3 text-center md:text-left flex-grow">
+                    <h2 class="text-2xl font-bold text-cyan-400 flex items-center justify-center md:justify-start gap-2">
+                        ✨ Tentang Saya
+                    </h2>
+                    <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                        Seorang siswa aktif di MAN 1 Jember dengan berbagai keahlian dan dedikasi tinggi di bidang <strong>Healthy Lifestyle</strong>, kebugaran fisik, serta prestasi di ajang lari dan cabang olahraga bela diri.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pendidikan -->
+        <section id="pendidikan" class="liquid-glass-card rounded-3xl p-6 md:p-8 space-y-4">
+            <h2 class="text-2xl font-bold text-purple-400">🎓 Pendidikan Saya</h2>
+            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                <div class="liquid-glass p-5 rounded-2xl space-y-2">
+                    <span class="text-xs font-bold text-cyan-400 tracking-wider">LUMAJANG ERA (2013-2024)</span>
+                    <ul class="text-sm text-gray-300 space-y-1 list-disc list-inside">
+                        <li>PAUD Tunas Harapan Rowokangkung</li>
+                        <li>RA Muslimat NU 15 Rowokangkung</li>
+                        <li>MI Nurul Islam Kota Lumajang</li>
+                        <li>MTsN 1 Lumajang</li>
+                    </ul>
+                </div>
+                <div class="liquid-glass p-5 rounded-2xl space-y-2">
+                    <span class="text-xs font-bold text-purple-400 tracking-wider">JEMBER ERA (2024-2027)</span>
+                    <ul class="text-sm text-gray-300 space-y-1 list-disc list-inside">
+                        <li>MAN 1 Jember (Siswa Kelas 12 MANPK)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jam Terbang & Prestasi -->
+        <section id="jam-terbang" class="liquid-glass-card rounded-3xl p-6 md:p-8 space-y-4">
+            <h2 class="text-2xl font-bold text-blue-400">🏆 Jam Terbang & Prestasi</h2>
+            <div class="space-y-6 mt-4">
+                
+                <!-- Running Event dengan 3 Foto di Sebelah Kanan -->
+                <div class="liquid-glass p-5 rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-cyan-300 text-lg">Running Event</h3>
+                        <ul class="text-sm text-gray-300 mt-3 space-y-2.5">
+                            <li>🏃‍♂️ <strong>Finisher 6 KM</strong> The Argopuro Semi Trail Run Jember (9-11-2025)</li>
+                            <li>🏃‍♂️ <strong>Finisher 5 KM</strong> Free Event in Town Square Jember City (17-5-2026)</li>
+                            <li>🥈 <strong>Juara 2</strong> Free Samapta Run 12 Menit 3200 Meter (13-9-2026)</li>
+                        </ul>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2.5 w-full lg:w-auto flex-shrink-0">
+                        <div class="w-full sm:w-24 md:w-28 h-32 md:h-36 rounded-xl overflow-hidden border border-cyan-400/40 shadow-md group">
+                            <img src="SDICUSCIU.PNG" alt="Argopuro Semi Trail Run" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="w-full sm:w-24 md:w-28 h-32 md:h-36 rounded-xl overflow-hidden border border-cyan-400/40 shadow-md group">
+                            <img src="iuhchsi.PNG" alt="Free Event Town Square" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="w-full sm:w-24 md:w-28 h-32 md:h-36 rounded-xl overflow-hidden border border-cyan-400/40 shadow-md group">
+                            <img src="dscuhnskdcu.PNG" alt="Free Samapta Run" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kejurprov Taekwondo dengan 2 Foto di Sebelah Kanan -->
+                <div class="liquid-glass p-5 rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <div class="flex-1">
+                        <h3 class="font-bold text-purple-300 text-lg">Kejurprov Taekwondo</h3>
+                        <ul class="text-sm text-gray-300 mt-3 space-y-2.5">
+                            <li>🥈 <strong>Juara 2 Kategori Kyorugi Semi Prestasi Junior M-63</strong> - Kejurprov Taekwondo Indonesia Antar Pelajar Jatim di GOR Ken Arok, Malang (28-9-2025)</li>
+                            <li>🥈 <strong>Juara 2 Kategori Kyorugi Semi Prestasi Junior M-68</strong> - Kejurprov Piala Gubernur Jatim di GOR Kenjeran Park, Surabaya (27-8-2026)</li>
+                        </ul>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 w-full lg:w-auto flex-shrink-0">
+                        <div class="w-full sm:w-28 md:w-32 h-36 md:h-40 rounded-xl overflow-hidden border border-purple-400/40 shadow-md group">
+                            <img src="ancn (2).PNG" alt="Kejurprov Taekwondo Malang" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="w-full sm:w-28 md:w-32 h-36 md:h-40 rounded-xl overflow-hidden border border-purple-400/40 shadow-md group">
+                            <img src="effrhj (2).PNG" alt="Kejurprov Piala Gubernur Jatim" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Exercise yang Disukai -->
+        <section id="exercise" class="liquid-glass-card rounded-3xl p-6 md:p-8 space-y-4">
+            <h2 class="text-2xl font-bold text-pink-400">💪 Exercise & Olahraga Favorit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                
+                <!-- Running (Dengan Foto Full Utuh di Sebelah Kanan) -->
+                <div class="liquid-glass p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 md:col-span-2">
+                    <div class="flex-1 space-y-2 text-center sm:text-left">
+                        <h3 class="font-bold text-white text-lg">Running</h3>
+                        <p class="text-xs md:text-sm text-gray-300">
+                            Gerak melangkah dengan kecepatan tinggi di mana kedua kaki sempat melayang atau tidak menyentuh tanah.
+                        </p>
+                    </div>
+                    <div class="w-48 h-64 md:w-56 md:h-72 flex-shrink-0 rounded-2xl overflow-hidden border border-pink-400/40 shadow-lg bg-slate-950 flex items-center justify-center">
+                        <img src="New Balance Fresh Foam X 1080 V14 – The Running Shoes.jpg" alt="Running Exercise" class="w-full h-full object-contain">
+                    </div>
+                </div>
+
+                <!-- Calisthenic Workout (Dengan 3 Foto Full Utuh di Sebelah Kanan) -->
+                <div class="liquid-glass p-5 rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-6 md:col-span-2">
+                    <div class="flex-1 space-y-2 text-center lg:text-left">
+                        <h3 class="font-bold text-white text-lg">Calisthenic Workout</h3>
+                        <p class="text-xs md:text-sm text-gray-300">
+                            Latihan fisik menggunakan berat badan sendiri sebagai beban utama untuk membangun kekuatan dan fleksibilitas.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2.5 w-full lg:w-auto flex-shrink-0">
+                        <div class="w-full sm:w-24 md:w-28 h-40 md:h-48 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="1149895717328301023.jpg" alt="Calisthenic 1" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full sm:w-24 md:w-28 h-40 md:h-48 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="🚨 Pull Up Bars are Back in Stock 👇.jpg" alt="Calisthenic 2" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full sm:w-24 md:w-28 h-40 md:h-48 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="1055953443869331888.jpg" alt="Calisthenic 3" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MMA / TKD (Dengan 4 Foto Full Utuh di Sebelah Kanan) -->
+                <div class="liquid-glass p-5 rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-6 md:col-span-2">
+                    <div class="flex-1 space-y-2 text-center lg:text-left">
+                        <h3 class="font-bold text-white text-lg">MMA / TKD</h3>
+                        <p class="text-xs md:text-sm text-gray-300">
+                            Seni bela diri dan pertarungan kontak penuh yang menekankan kecepatan serta kekuatan tendangan/pukulan.
+                        </p>
+                    </div>
+                    <!-- 4 Foto Full Utuh MMA / TKD (Grid 2x2) -->
+                    <div class="grid grid-cols-2 gap-2.5 w-full lg:w-auto flex-shrink-0">
+                        <div class="w-full sm:w-28 md:w-32 h-36 md:h-40 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="Galerie de photos _ EN IMAGES - Taekwondo_ pas de….jpg" alt="MMA TKD 1" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full sm:w-28 md:w-32 h-36 md:h-40 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="1109081845728864256.jpg" alt="MMA TKD 2" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full sm:w-28 md:w-32 h-36 md:h-40 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="976929344194196108.jpg" alt="MMA TKD 3" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full sm:w-28 md:w-32 h-36 md:h-40 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="The History of Fighting.jpg" alt="MMA TKD 4" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Futsal / Football (Dengan 2 Foto Full Utuh di Sebelah Kanan) -->
+                <div class="liquid-glass p-5 rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-6 md:col-span-2">
+                    <div class="flex-1 space-y-2 text-center lg:text-left">
+                        <h3 class="font-bold text-white text-lg">Futsal / Football</h3>
+                        <p class="text-xs md:text-sm text-gray-300">
+                            Permainan bola beregu untuk melatih ketangkasan dan kerja sama tim.
+                        </p>
+                    </div>
+                    <!-- 2 Foto Full Utuh Futsal / Football -->
+                    <div class="grid grid-cols-2 gap-3 w-full lg:w-auto flex-shrink-0">
+                        <div class="w-full sm:w-32 md:w-36 h-44 md:h-52 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="futsal.jpg" alt="Futsal" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-full sm:w-32 md:w-36 h-44 md:h-52 rounded-xl overflow-hidden border border-pink-400/40 shadow-md bg-slate-950 flex items-center justify-center">
+                            <img src="football.jpg" alt="Football" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ulasan Klien / Tokoh -->
+        <section id="ulasan" class="liquid-glass-card rounded-3xl p-6 md:p-8 space-y-4">
+            <h2 class="text-2xl font-bold text-green-400">💬 Ulasan & Apresiasi</h2>
+            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <div class="liquid-glass p-4 rounded-2xl italic text-sm text-gray-300">
+                    "Mantap! Sangat profesional."
+                    <div class="not-italic font-bold text-cyan-400 mt-2 text-xs">— Indra H (Atlet Panjat Tebing)</div>
+                </div>
+                <div class="liquid-glass p-4 rounded-2xl italic text-sm text-gray-300">
+                    "Teruskan bakatmu itu wahai anak mudaa!"
+                    <div class="not-italic font-bold text-purple-400 mt-2 text-xs">— Raden Syafif (Ketua Pondok Dagestan Cabang Indonesia)</div>
+                </div>
+                <div class="liquid-glass p-4 rounded-2xl italic text-sm text-gray-300">
+                    "Semangat pantang menyerah okeee!"
+                    <div class="not-italic font-bold text-blue-400 mt-2 text-xs">— Bang Fiqi (Taruna Akmil)</div>
+                </div>
+                <div class="liquid-glass p-4 rounded-2xl italic text-sm text-gray-300">
+                    "Keep strongg!"
+                    <div class="not-italic font-bold text-pink-400 mt-2 text-xs">— Kang Savin (Ahli Gizi)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Saya -->
+        <section id="kontak" class="liquid-glass-card rounded-3xl p-6 md:p-8 space-y-4 text-center">
+            <h2 class="text-2xl font-bold text-yellow-400">📬 Kontak Saya</h2>
+            <div class="flex flex-col items-center space-y-2 text-sm text-gray-300 mt-4">
+                <p>🌐 Website: <a href="http://www.studentathlete.co.id" class="text-cyan-400 underline">www.studentathlete.co.id</a></p>
+                <p>📸 Instagram: <span class="text-pink-400 font-medium">@moh_vlee</span></p>
+                <p>📧 Email: <span class="text-gray-200">orangbiasa4618@gmail.com</span></p>
+                <p>📞 Telepon: <span class="text-gray-200">+62-851-5061-4419</span></p>
+                <p>📍 Alamat: Krajan Barat Rowokangkung RT 01 RW 01, Lumajang</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-xs text-gray-500 pt-6">
+            &copy; 2026 M Valezco S (Bang Valzz). All Rights Reserved. Stay Hydrated !!
+        </footer>
+
+    </main>
+
+</body>
+</html>
